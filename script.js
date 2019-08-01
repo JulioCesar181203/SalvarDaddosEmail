@@ -11,7 +11,7 @@ let div = document.querySelector("div")
 
 
 function cadastrar(){
-if(email1 === email2){
+if(email1.value == email2.value){
     localStorage.setItem("nome", nome.value)
     localStorage.setItem("email1", email1.value)
     localStorage.setItem("email2", email2.value)
@@ -23,16 +23,33 @@ if(email1 === email2){
         
         alert("ERRO ENCONTRADO");
     }
+    
         
         
-        // div.style.display = "none"
-        // texto.innerHTML = `Bem vindo ${localStorage.nome}`;
-    }
-
-
-
-
+}
 
 
 
 botao.onclick = cadastrar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// div.style.display = "none"
+// texto.innerHTML = `Bem vindo ${localStorage.nome}`;
